@@ -85,7 +85,7 @@ jobs:
         run: |
           cd friendlywrt-rk3328/friendlywrt/package
           rm -rf luci-theme-argon
-          git clone https://github.com/Meroser/luci-theme-argon.git
+          git clone https://github.com/jerrykuku/luci-theme-argon.git
 
       - name: Update Target.mk
         run: |
