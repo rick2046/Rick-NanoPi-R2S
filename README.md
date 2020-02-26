@@ -12,7 +12,7 @@
 * 集成最新实时监控 Netdata v1.20.0
 
 ## 用法
-- 修改 `.github/workflows/r2s_lean.yml` 即可触发编译
+- 修改 [`.github/workflows/r2s_lean.yml`](.github/workflows/r2s_lean.yml) 即可触发编译
 - 每天 `09:10` 自动触发每日编译
 
 ## 注意
