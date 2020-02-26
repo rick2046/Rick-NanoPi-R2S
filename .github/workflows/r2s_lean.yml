@@ -117,7 +117,7 @@ jobs:
           sed -i 's/option fullcone\t1/option fullcone\t0/' package/network/config/firewall/files/firewall.config
           sed -i '/8.8.8.8/d' package/base-files/files/root/setup.sh
           sed -i 's/192.168.2.1/192.168.50.1/g' package/base-files/files/bin/config_generate
-          sed -i 's/FriendlyWrt/KeroroWrt/g' package/base-files/files/etc/config/system
+          sed -i 's/FriendlyWrt/KeroroWrt/g' package/base-files/files/bin/config_generate
 
       - name: Install UPX
         run: |
