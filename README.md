@@ -5,8 +5,8 @@
 请前往 [Release 页面](https://github.com/maxming2333/NanoPi-R2S/releases) 下载
 
 ![NanoPi-R2S RK3328 OpenWrt 19.07 Build For Lean](https://github.com/maxming2333/NanoPi-R2S/workflows/NanoPi-R2S%20RK3328%20OpenWrt%2019.07%20Build%20For%20Lean/badge.svg)
-![GitHub All Releases](https://img.shields.io/github/downloads/maxming2333/NanoPi-R2S/total)
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/maxming2333/NanoPi-R2S?include_prereleases)
+![GitHub All Releases](https://img.shields.io/github/downloads/maxming2333/NanoPi-R2S/total)
 
 
 ## 说明
