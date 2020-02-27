@@ -23,3 +23,4 @@
 * [skytotwo/NanoPi-R1S-Build-By-Actions](https://github.com/skytotwo/NanoPi-R1S-Build-By-Actions)
 * [klever1988/nanopi-openwrt](https://github.com/klever1988/nanopi-openwrt)
 * [yangliu/NanoPi-R2S](https://github.com/yangliu/NanoPi-R2S)
+* [soffchen/NanoPi-R2S](https://github.com/soffchen/NanoPi-R2S)
