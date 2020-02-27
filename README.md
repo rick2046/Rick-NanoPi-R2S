@@ -1,4 +1,13 @@
-# 使用 Github Actions 在线编译 NanoPi-R2S 固件
+# 自动发布 NanoPi-R2S 固件
+
+> 每天定时自动编译和发布，手动修改文件也会发布新版本
+
+请前往 [Release 页面](https://github.com/maxming2333/NanoPi-R2S/releases) 下载
+
+![NanoPi-R2S RK3328 OpenWrt 19.07 Build For Lean](https://github.com/maxming2333/NanoPi-R2S/workflows/NanoPi-R2S%20RK3328%20OpenWrt%2019.07%20Build%20For%20Lean/badge.svg)
+![GitHub All Releases](https://img.shields.io/github/downloads/maxming2333/NanoPi-R2S/total)
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/maxming2333/NanoPi-R2S?include_prereleases)
+
 
 ## 说明
 * IP: 192.168.50.1
