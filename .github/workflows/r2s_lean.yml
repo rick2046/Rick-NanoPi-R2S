@@ -168,6 +168,12 @@ jobs:
           ls -lash ./artifact
           echo "##[set-output name=release_tag;]$release_tag"
 
+      - name: Upload Artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: ${{ steps.assemble_artifact.outputs.release_tag }}
+          path: ./artifact/
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
