@@ -27,7 +27,6 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
-          ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
           sudo apt-get update
           sudo rm -rf /usr/share/dotnet /usr/local/lib/android/sdk
           sudo docker image prune -a -f
@@ -160,7 +159,7 @@ jobs:
         run: |
           rm -rf ./artifact/
           mkdir -p ./artifact/
-          release_tag="KeroroWrt-NanoPi-R2S-Lean-$(date +%Y-%m-%d-%H%M%S)"
+          release_tag="KeroroWrt-NanoPi-R2S-Lean-$(date -d "+8 hours" +%Y-%m-%d-%H%M%S)"
           find friendlywrt-rk3328/out/ -name "FriendlyWrt_*img.zip*" | xargs -i mv -f {} "./artifact/${release_tag}-arm64-sd.img.zip"
           cp friendlywrt-rk3328/friendlywrt/.config ./artifact/
           cp friendlywrt-rk3328/out/config.lite ./artifact/
