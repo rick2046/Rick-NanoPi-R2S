@@ -27,6 +27,7 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
+          ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
           sudo apt-get update
           sudo rm -rf /usr/share/dotnet /usr/local/lib/android/sdk
           sudo docker image prune -a -f
@@ -149,6 +150,11 @@ jobs:
         run: |
           find friendlywrt-rk3328/out/ -name "FriendlyWrt_*img*" | xargs -i zip -r {}.zip {}
 
+      - name: Save config.lite
+        run: |
+          cd friendlywrt-rk3328/friendlywrt
+          ./scripts/diffconfig.sh > ../out/config.lite
+
       - name: Assemble Artifact
         id: assemble_artifact
         run: |
@@ -157,7 +163,10 @@ jobs:
           release_tag="KeroroWrt-NanoPi-R2S-Lean-$(date +%Y-%m-%d-%H%M%S)"
           find friendlywrt-rk3328/out/ -name "FriendlyWrt_*img.zip*" | xargs -i mv -f {} "./artifact/${release_tag}-arm64-sd.img.zip"
           cp friendlywrt-rk3328/friendlywrt/.config ./artifact/
+          cp friendlywrt-rk3328/out/config.lite ./artifact/
           zip -r artifact.zip ./artifact/
+          ls -lash ./
+          ls -lash ./artifact
           echo "##[set-output name=release_tag;]$release_tag"
 
       - name: Create Release
