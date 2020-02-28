@@ -14,7 +14,9 @@
 * 密码: password
 
 ## 特色
-* 支持 RTL8821CU 芯片的 WiFi 棒子，如 [COMFAST](https://u.jd.com/DOkkhX)
+* 支持 RTL8821CU 芯片的 USB WiFi 设备，已知支持列表：
+    - [COMFAST 726B](https://u.jd.com/DOkkhX)
+    - [COMFAST CF-759BF](https://u.jd.com/C2ivH7)
 * 集成 [tty228/luci-app-serverchan](https://github.com/tty228/luci-app-serverchan)
 * 集成 [vernesong/OpenClash](https://github.com/vernesong/OpenClash) 及其 clash bin
 * 集成 [rufengsuixing/luci-app-adguardhome](https://github.com/rufengsuixing/luci-app-adguardhome)
