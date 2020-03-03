@@ -2,7 +2,7 @@
 
 > 每天定时自动编译和发布，手动修改文件也会发布新版本
 
-请前往 [Release 页面](https://github.com/maxming2333/NanoPi-R2S/releases) 下载
+请前往 [Release 页面](https://github.com/maxming2333/NanoPi-R2S/releases) 下载，如果自动发布 Release 失败，请前往 [Action 页面](https://github.com/maxming2333/NanoPi-R2S/actions) 下载
 
 ![NanoPi-R2S RK3328 OpenWrt 19.07 Build For Lean](https://github.com/maxming2333/NanoPi-R2S/workflows/NanoPi-R2S%20RK3328%20OpenWrt%2019.07%20Build%20For%20Lean/badge.svg)
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/maxming2333/NanoPi-R2S?include_prereleases)
