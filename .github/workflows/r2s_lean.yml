@@ -14,7 +14,7 @@ jobs:
 
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
 
@@ -32,7 +32,7 @@ jobs:
           sudo docker image prune -a -f
           sudo apt-get -y install upx-ucl
           sudo apt-get -y purge dotnet* ghc* google* llvm* mysql* php* zulu* firefox hhvm
-          sudo apt-get -y autoremove --purge          
+          sudo apt-get -y autoremove --purge
           wget -O - https://raw.githubusercontent.com/friendlyarm/build-env-on-ubuntu-bionic/master/install.sh | bash
 
       - name: Install Repo
@@ -102,7 +102,7 @@ jobs:
       - name: Install Mods
         run: |
           cd friendlywrt-rk3328
-          
+
           #cp ../patches/31-usb_wifi friendlywrt/package/base-files/files/etc/hotplug.d/usb/31-usb_wifi
 
           rm -rf friendlywrt/package/network/config/firewall
