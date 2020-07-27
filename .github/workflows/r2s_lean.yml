@@ -1,4 +1,4 @@
-name: NanoPi-R2S RK3328 OpenWrt 19.07 Build For Rick
+name: NanoPi-R2S RK3328 OpenWrt 19.07 Build For Lean
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
       - '.github/workflows/r2s_lean.yml'
       - 'config'
   schedule:
-    - cron: '14 20 * * *'
+    - cron: '14 42 * * *'
 
 jobs:
 
