@@ -8,7 +8,7 @@ on:
       - '.github/workflows/r2s_lean.yml'
       - 'config'
   schedule:
-    - cron: '14 42  * * *'
+    - cron: '55 08  * * *'
 
 jobs:
 
